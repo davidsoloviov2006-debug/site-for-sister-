@@ -43,3 +43,17 @@ document.getElementById('form').addEventListener('submit', e => {
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`, '_blank');
   e.target.reset();
 });
+
+// ---- Красивые эффекты: тень у шапки и плавное появление блоков ----
+const header = document.querySelector('.header');
+addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 10), { passive: true });
+
+document.documentElement.classList.add('js');
+const items = document.querySelectorAll('.card, .about > *, .prices, .gallery img, .contacts > *, .section h2, .section .sub');
+items.forEach((el, i) => { el.classList.add('reveal'); el.style.transitionDelay = (i % 3) * 90 + 'ms'; });
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  items.forEach(el => io.observe(el));
+} else {
+  items.forEach(el => el.classList.add('in'));
+}
