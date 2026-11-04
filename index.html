@@ -1,29 +1,34 @@
 <!doctype html>
-<html lang="ru">
+<html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Мария — массаж в Афуле</title>
-<meta name="description" content="Профессиональный массаж в уютном кабинете в Афуле: лечебный, шведский, антицеллюлитный, массаж для беременных, горячие камни и баночный массаж. Запись онлайн.">
+<title>מריה — עיסוי בעפולה</title>
+<meta name="description" content="עיסוי מקצועי בקליניקה נעימה בעפולה: עיסוי רפואי, שוודי, אנטי-צלוליט, לנשים בהריון, אבנים חמות וכוסות רוח. לנשים בלבד.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Heebo:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
   <div class="container header__in">
-    <a href="#top" class="logo">Мария <span>массаж</span></a>
+    <a href="#top" class="logo" data-i18n="logo">מריה <span>עיסוי</span></a>
     <nav class="nav" id="nav">
-      <a href="#services">Услуги</a>
-      <a href="#about">Обо мне</a>
-      <a href="#prices">Цены</a>
-      <a href="#gallery">Кабинет</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#services" data-i18n="navServices">טיפולים</a>
+      <a href="#about" data-i18n="navAbout">עליי</a>
+      <a href="#prices" data-i18n="navPrices">מחירים</a>
+      <a href="#gallery" data-i18n="navGallery">הקליניקה</a>
+      <a href="#contacts" data-i18n="navContacts">צור קשר</a>
     </nav>
-    <a href="https://calmark.io/p/Wg5Sy" class="btn btn--small" target="_blank" rel="noopener">Записаться</a>
-    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    <div class="lang" id="lang">
+      <button data-lang="he">עב</button>
+      <button data-lang="ru">RU</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <a href="https://calmark.io/p/Wg5Sy" class="btn btn--small" target="_blank" rel="noopener" data-i18n="book">קביעת תור</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -32,49 +37,49 @@
 <section class="hero">
   <div class="container hero__in">
     <div class="hero__text">
-      <p class="eyebrow">Массаж · Афула</p>
-      <h1>Верните телу лёгкость и спокойствие</h1>
-      <p class="lead">Уютный кабинет, тёплая атмосфера и внимательный подход. Помогу снять напряжение в спине и шее, восстановиться и по-настоящему расслабиться.</p>
+      <p class="eyebrow" data-i18n="eyebrow">עיסוי · עפולה</p>
+      <h1 data-i18n="h1">החזירו לגוף קלילות ושלווה</h1>
+      <p class="lead" data-i18n="lead">קליניקה נעימה, אווירה חמה ויחס אישי. אעזור לשחרר מתחים בגב ובצוואר, להתאושש ולהירגע באמת.</p>
       <div class="hero__btns">
-        <a href="https://calmark.io/p/Wg5Sy" class="btn" target="_blank" rel="noopener">Записаться онлайн</a>
-        <a href="#prices" class="btn btn--ghost">Смотреть цены</a>
+        <a href="https://calmark.io/p/Wg5Sy" class="btn" target="_blank" rel="noopener" data-i18n="bookOnline">קביעת תור אונליין</a>
+        <a href="#prices" class="btn btn--ghost" data-i18n="seePrices">למחירים</a>
       </div>
       <ul class="facts">
-        <li><b>Женщинам</b> уютный формат «только для своих»</li>
-        <li><b>Сертификаты</b> подтверждённая квалификация</li>
-        <li><b>Индивидуально</b> программа под ваш запрос</li>
+        <li data-i18n="f1"><b>לנשים בלבד</b>אווירה אינטימית ונעימה</li>
+        <li data-i18n="f2"><b>מוסמכת</b>תעודות והכשרה מקצועית</li>
+        <li data-i18n="f3"><b>יחס אישי</b>טיפול מותאם במיוחד בשבילך</li>
       </ul>
     </div>
-    <img class="hero__img" src="assets/portrait.jpg" alt="Мария за работой в массажном кабинете" width="900" height="1159">
+    <img class="hero__img" src="assets/portrait.jpg" data-i18n-alt="altPortrait" alt="מריה בזמן טיפול" width="900" height="1159">
   </div>
 </section>
 
 <section class="section" id="services">
   <div class="container">
-    <h2>Услуги</h2>
-    <p class="sub">Подберу программу под ваш запрос и самочувствие</p>
+    <h2 data-i18n="servicesTitle">טיפולים</h2>
+    <p class="sub" data-i18n="servicesSub">אתאים את הטיפול לצרכים ולהרגשה שלך</p>
     <div class="cards">
-      <article class="card"><div class="ico">🩺</div><h3>Лечебный массаж</h3><p>Работа с болью и зажимами в спине, шее и суставах. Помогает при перегрузках и сидячей работе.</p></article>
-      <article class="card"><div class="ico">🌿</div><h3>Шведский массаж</h3><p>Классическая техника для всего тела: улучшает кровообращение, снимает усталость и тонизирует.</p></article>
-      <article class="card"><div class="ico">🤰</div><h3>Массаж для беременных</h3><p>Бережные техники, которые облегчают нагрузку на спину и ноги и помогают расслабиться.</p></article>
-      <article class="card"><div class="ico">🫙</div><h3>Баночный массаж</h3><p>Массаж в сочетании с вакуумными банками: глубокая проработка мышц и разгон лимфы.</p></article>
-      <article class="card"><div class="ico">🪨</div><h3>Горячие камни</h3><p>Тепло базальтовых камней и массаж: глубокое расслабление и ощущение уюта.</p></article>
-      <article class="card"><div class="ico">✨</div><h3>Антицеллюлитный массаж</h3><p>Работа с проблемными зонами: улучшает тонус кожи и контуры тела.</p></article>
+      <article class="card"><div class="ico">🩺</div><h3 data-i18n="s1">עיסוי רפואי</h3><p data-i18n="s1d">עבודה על כאבים ותפיסות בגב, בצוואר ובמפרקים. מתאים לעומס ולעבודה בישיבה.</p></article>
+      <article class="card"><div class="ico">🌿</div><h3 data-i18n="s2">עיסוי שוודי</h3><p data-i18n="s2d">טכניקה קלאסית לכל הגוף: משפרת את זרימת הדם, מפיגה עייפות ומרעננת.</p></article>
+      <article class="card"><div class="ico">🤰</div><h3 data-i18n="s3">עיסוי לנשים בהריון</h3><p data-i18n="s3d">טכניקות עדינות שמקלות על העומס בגב וברגליים ועוזרות להירגע.</p></article>
+      <article class="card"><div class="ico">🫙</div><h3 data-i18n="s4">עיסוי עם כוסות רוח</h3><p data-i18n="s4d">עיסוי בשילוב כוסות רוח: עבודה עמוקה על השרירים ושיפור זרימת הלימפה.</p></article>
+      <article class="card"><div class="ico">🪨</div><h3 data-i18n="s5">אבנים חמות ועיסוי</h3><p data-i18n="s5d">החום של אבני בזלת יחד עם עיסוי: הרפיה עמוקה ותחושת נעימות.</p></article>
+      <article class="card"><div class="ico">✨</div><h3 data-i18n="s6">עיסוי אנטי-צלוליט</h3><p data-i18n="s6d">עבודה על אזורים בעייתיים: משפר את מרקם העור ואת קווי הגוף.</p></article>
     </div>
   </div>
 </section>
 
 <section class="section section--alt" id="about">
   <div class="container about">
-    <img class="about__img" src="assets/massage.jpg" alt="Мария делает массаж спины и шеи" width="900" height="1485">
+    <img class="about__img" src="assets/massage.jpg" data-i18n-alt="altMassage" alt="מריה מעסה גב וצוואר" width="900" height="1485">
     <div>
-      <h2>Обо мне</h2>
-      <p>Здравствуйте! Меня зовут <b>Мария</b>, я практикую массаж в Афуле. Мне важно, чтобы после сеанса вы уходили с лёгким телом и спокойной головой.</p>
-      <p>Принимаю у себя в светлом, чистом кабинете: тёплое освещение, мягкие полотенца, приятные запахи и музыка. На стене висят мои сертификаты. Для каждого клиента подбираю свою программу и всегда учитываю ваши пожелания и самочувствие.</p>
+      <h2 data-i18n="aboutTitle">קצת עליי</h2>
+      <p data-i18n="a1">שלום! קוראים לי <b>מריה</b>, ואני מטפלת בעיסוי בעפולה. חשוב לי שתצאי מהטיפול עם גוף קליל וראש רגוע.</p>
+      <p data-i18n="a2">אני מקבלת בקליניקה מוארת ונקייה: תאורה חמה, מגבות רכות, ריחות נעימים ומוזיקה. התעודות שלי תלויות על הקיר. לכל מטופלת אני מתאימה טיפול אישי ומתחשבת ברצונות ובהרגשה שלה.</p>
       <ul class="checks">
-        <li>Сертифицированный специалист</li>
-        <li>Чистота и качественные материалы</li>
-        <li>Говорю на русском и иврите</li>
+        <li data-i18n="c1">מטפלת מוסמכת</li>
+        <li data-i18n="c2">ניקיון וחומרים איכותיים</li>
+        <li data-i18n="c3">מדברת עברית ורוסית</li>
       </ul>
     </div>
   </div>
@@ -82,29 +87,29 @@
 
 <section class="section" id="prices">
   <div class="container">
-    <h2>Цены</h2>
-    <p class="sub">Выберите длительность сеанса: 1 час, 1,5 часа или 2 часа</p>
+    <h2 data-i18n="pricesTitle">מחירים</h2>
+    <p class="sub" data-i18n="pricesSub">בחרי את משך הטיפול: שעה, שעה וחצי או שעתיים</p>
     <div class="prices">
-      <div class="phead"><span></span><span>1 ч</span><span>1,5 ч</span><span>2 ч</span></div>
-      <div class="prow"><span>Лечебный массаж</span><b>₪260</b><b>₪360</b><b>₪470</b></div>
-      <div class="prow"><span>Шведский массаж</span><b>₪260</b><b>₪360</b><b>₪470</b></div>
-      <div class="prow"><span>Массаж с баночками</span><b>₪260</b><b>₪360</b><b>₪470</b></div>
-      <div class="prow"><span>Горячие камни и массаж</span><b>—</b><b>₪360</b><b>₪470</b></div>
-      <div class="prow"><span>Антицеллюлитный массаж</span><b>₪260</b><b>—</b><b>—</b></div>
-      <div class="prow"><span>Массаж для беременных</span><b>₪200</b><b>—</b><b>—</b></div>
+      <div class="phead"><span></span><span data-i18n="h60">שעה</span><span data-i18n="h90">שעה וחצי</span><span data-i18n="h120">שעתיים</span></div>
+      <div class="prow"><span data-i18n="s1">עיסוי רפואי</span><b>₪260</b><b>₪360</b><b>₪470</b></div>
+      <div class="prow"><span data-i18n="s2">עיסוי שוודי</span><b>₪260</b><b>₪360</b><b>₪470</b></div>
+      <div class="prow"><span data-i18n="s4">עיסוי עם כוסות רוח</span><b>₪260</b><b>₪360</b><b>₪470</b></div>
+      <div class="prow"><span data-i18n="s5">אבנים חמות ועיסוי</span><b>—</b><b>₪360</b><b>₪470</b></div>
+      <div class="prow"><span data-i18n="s6">עיסוי אנטי-צלוליט</span><b>₪260</b><b>—</b><b>—</b></div>
+      <div class="prow"><span data-i18n="s3">עיסוי לנשים בהריון</span><b>₪200</b><b>—</b><b>—</b></div>
     </div>
-    <p class="note">🎁 Есть подарочный сертификат на 60 минут: стоимость уточняйте при записи.</p>
+    <p class="note" data-i18n="gift">🎁 יש שובר מתנה ל-60 דקות. את המחיר אפשר לברר בקביעת התור.</p>
   </div>
 </section>
 
 <section class="section section--alt" id="gallery">
   <div class="container">
-    <h2>Мой кабинет</h2>
-    <p class="sub">Светло, чисто и спокойно</p>
+    <h2 data-i18n="galleryTitle">הקליניקה שלי</h2>
+    <p class="sub" data-i18n="gallerySub">מואר, נקי ושקט</p>
     <div class="gallery">
-      <img src="assets/room.jpg" alt="Массажный кабинет">
-      <img src="assets/hands.jpg" alt="Работа с руками">
-      <img src="assets/portrait.jpg" alt="Мария за работой">
+      <img src="assets/room.jpg" alt="">
+      <img src="assets/hands.jpg" alt="">
+      <img src="assets/portrait.jpg" alt="">
     </div>
   </div>
 </section>
@@ -112,34 +117,34 @@
 <section class="section" id="contacts">
   <div class="container contacts">
     <div>
-      <h2>Запись и контакты</h2>
-      <p>Запишитесь онлайн или оставьте заявку, и я свяжусь с вами, чтобы подобрать удобное время.</p>
-      <p><a href="https://calmark.io/p/Wg5Sy" class="btn" target="_blank" rel="noopener">Записаться онлайн</a></p>
+      <h2 data-i18n="contactsTitle">קביעת תור ויצירת קשר</h2>
+      <p data-i18n="contactsText">קבעי תור אונליין או השאירי פרטים, ואחזור אלייך לתיאום שעה נוחה.</p>
+      <p><a href="https://calmark.io/p/Wg5Sy" class="btn" target="_blank" rel="noopener" data-i18n="bookOnline">קביעת תור אונליין</a></p>
       <ul class="clist">
-        <li>📍 Афула, ул. Йехалом 18, кв. 22, 5 этаж</li>
-        <li>📷 <a href="https://instagram.com/massage.maria.afula" target="_blank" rel="noopener">@massage.maria.afula</a></li>
+        <li data-i18n="address">📍 יהלום 18, עפולה, דירה 22, קומה 5</li>
+        <li>📷 <a href="https://instagram.com/massage.maria.afula" target="_blank" rel="noopener" dir="ltr">@massage.maria.afula</a></li>
         <li>💬 <a href="https://wa.me/972000000000" target="_blank" rel="noopener">WhatsApp</a></li>
-        <li>📞 <a href="tel:+972000000000">+972 00-000-0000</a></li>
-        <li><a href="https://waze.com/ul?q=Yehalom%2018%20Afula&navigate=yes" target="_blank" rel="noopener">🚗 Проложить маршрут в Waze</a></li>
+        <li>📞 <a href="tel:+972000000000" dir="ltr">+972 00-000-0000</a></li>
+        <li><a href="https://waze.com/ul?q=%D7%99%D7%94%D7%9C%D7%95%D7%9D%2018%20%D7%A2%D7%A4%D7%95%D7%9C%D7%94&navigate=yes" target="_blank" rel="noopener" data-i18n="waze">🚗 ניווט ב-Waze</a></li>
       </ul>
     </div>
     <form class="form" id="form">
-      <label>Ваше имя<input name="name" required placeholder="Как к вам обращаться"></label>
-      <label>Телефон<input name="phone" type="tel" required placeholder="+972 __ ___ ____"></label>
-      <label>Услуга
+      <label><span data-i18n="fName">שם</span><input name="name" required data-i18n-ph="fNamePh" placeholder="איך לפנות אלייך"></label>
+      <label><span data-i18n="fPhone">טלפון</span><input name="phone" type="tel" required placeholder="05_-___-____" dir="ltr"></label>
+      <label><span data-i18n="fService">טיפול</span>
         <select name="service">
-          <option>Лечебный массаж</option>
-          <option>Шведский массаж</option>
-          <option>Массаж с баночками</option>
-          <option>Горячие камни и массаж</option>
-          <option>Антицеллюлитный массаж</option>
-          <option>Массаж для беременных</option>
-          <option>Подарочный сертификат</option>
+          <option data-i18n="s1">עיסוי רפואי</option>
+          <option data-i18n="s2">עיסוי שוודי</option>
+          <option data-i18n="s4">עיסוי עם כוסות רוח</option>
+          <option data-i18n="s5">אבנים חמות ועיסוי</option>
+          <option data-i18n="s6">עיסוי אנטי-צלוליט</option>
+          <option data-i18n="s3">עיסוי לנשים בהריון</option>
+          <option data-i18n="giftOpt">שובר מתנה</option>
         </select>
       </label>
-      <label>Комментарий<textarea name="msg" rows="3" placeholder="Удобное время, пожелания"></textarea></label>
-      <button class="btn" type="submit">Отправить заявку в WhatsApp</button>
-      <p class="form__ok" id="ok" hidden>Спасибо! Откроется WhatsApp с готовым сообщением.</p>
+      <label><span data-i18n="fMsg">הערות</span><textarea name="msg" rows="3" data-i18n-ph="fMsgPh" placeholder="שעה נוחה, בקשות"></textarea></label>
+      <button class="btn" type="submit" data-i18n="fSend">שליחה ב-WhatsApp</button>
+      <p class="form__ok" id="ok" hidden data-i18n="fOk">תודה! ייפתח WhatsApp עם הודעה מוכנה.</p>
     </form>
   </div>
 </section>
@@ -147,9 +152,10 @@
 </main>
 
 <footer class="footer">
-  <div class="container">© <span id="year"></span> Мария · Массаж в Афуле</div>
+  <div class="container">© <span id="year"></span> <span data-i18n="footer">מריה · עיסוי בעפולה</span></div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

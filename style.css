@@ -7,20 +7,26 @@
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
 h1,h2,h3,.logo{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.15}
+[dir=rtl] body{font-family:Heebo,Manrope,system-ui,sans-serif}
+[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] .logo,[dir=rtl] .facts b{font-family:"Frank Ruhl Libre",Georgia,serif}
+[dir=rtl] .eyebrow{letter-spacing:.04em}
 a{color:inherit}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
 
 .header{position:sticky;top:0;z-index:10;background:rgba(248,250,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .header__in{display:flex;align-items:center;gap:24px;height:68px}
-.logo{font-size:1.7rem;font-weight:700;text-decoration:none;margin-right:auto}
+.logo{font-size:1.7rem;font-weight:700;text-decoration:none;margin-inline-end:auto}
 .logo span{color:var(--accent)}
 .nav{display:flex;gap:22px}
 .nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted)}
 .nav a:hover{color:var(--accent)}
 .burger{display:none;background:none;border:0;width:36px;height:36px;cursor:pointer}
 .burger span{display:block;height:2px;background:var(--ink);margin:6px 6px}
+.lang{display:flex;gap:2px;background:var(--alt);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;font:600 .78rem Manrope,Heebo,sans-serif;color:var(--muted);padding:6px 10px;border-radius:999px;cursor:pointer}
+.lang button.active{background:var(--accent);color:#fff}
 
-.btn{display:inline-block;background:var(--accent);color:#fff;border:0;padding:14px 28px;border-radius:999px;font:600 1rem Manrope,sans-serif;text-decoration:none;cursor:pointer;transition:.2s}
+.btn{font-family:inherit!important;display:inline-block;background:var(--accent);color:#fff;border:0;padding:14px 28px;border-radius:999px;font:600 1rem Manrope,sans-serif;text-decoration:none;cursor:pointer;transition:.2s}
 .btn:hover{background:var(--accent-d);transform:translateY(-1px)}
 .btn--small{padding:9px 20px;font-size:.9rem}
 .btn--ghost{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 2px var(--accent)}
@@ -54,13 +60,13 @@ h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:10px}
 .about p{margin-bottom:14px;color:var(--muted)}
 .about p b{color:var(--ink)}
 .checks{list-style:none;margin-top:18px}
-.checks li{padding-left:30px;position:relative;margin-bottom:8px}
-.checks li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.checks li{padding-inline-start:30px;position:relative;margin-bottom:8px}
+.checks li::before{content:"✓";position:absolute;inset-inline-start:0;color:var(--accent);font-weight:700}
 
 .prices{max-width:760px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 28px}
 .phead,.prow{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:8px;align-items:baseline;padding:16px 0;border-bottom:1px dashed var(--line)}
 .phead{font-weight:600;color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line)}
-.phead span,.prow b{text-align:right}
+.phead span,.prow b{text-align:end}
 .prow:last-child{border:0}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r);display:block}
@@ -85,7 +91,8 @@ h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:10px}
 
 @media(max-width:860px){
   .hero__in,.about,.contacts{grid-template-columns:1fr}
-  .hero__img{max-width:360px;margin:0 auto;order:-1}
+  .hero__img{max-width:240px;margin:0 auto;order:-1}
+  .hero{padding:32px 0 56px}
   .about__img{max-width:320px}
   .gallery{grid-template-columns:1fr 1fr}
   .cards{grid-template-columns:1fr 1fr}
@@ -94,7 +101,8 @@ h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:10px}
   .nav.open{display:flex}
   .nav a{padding:14px 20px}
   .btn--small{display:none}
-  .header__in{justify-content:space-between}
+  .header__in{justify-content:space-between;gap:12px}
+  .logo{font-size:1.45rem}
 }
 @media(max-width:560px){
   .gallery{grid-template-columns:1fr}
