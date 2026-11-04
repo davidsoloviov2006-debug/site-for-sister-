@@ -41,7 +41,7 @@ h1{font-size:clamp(2.4rem,5vw,3.8rem);margin-bottom:18px}
 .facts{display:flex;gap:30px;flex-wrap:wrap;list-style:none;color:var(--muted);font-size:.9rem}
 .facts li{max-width:150px}
 .facts b{display:block;font:700 1.45rem "Cormorant Garamond",serif;color:var(--accent)}
-.hero__img,.about__img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:200px 200px var(--r) var(--r);display:block;box-shadow:0 20px 40px rgba(40,90,55,.18)}
+.hero__img,.about__img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:200px 200px var(--r) var(--r);display:block;box-shadow:0 20px 40px rgba(40,90,55,.18)}
 
 .section{padding:76px 0}
 .section--alt{background:var(--alt)}
